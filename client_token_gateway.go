@@ -24,6 +24,14 @@ func (g *ClientTokenGateway) GenerateWithCustomer(ctx context.Context, customerI
 	})
 }
 
+func (g *ClientTokenGateway) GenerateWithCustomerMerchantIdentifier(ctx context.Context, customerId, merchantAccountId string) (string, error) {
+	return g.generate(ctx, &ClientTokenRequest{
+		Version:           clientTokenVersion,
+		CustomerID:        customerId,
+		MerchantAccountId: merchantAccountId,
+	})
+}
+
 func (g *ClientTokenGateway) generate(ctx context.Context, req *ClientTokenRequest) (string, error) {
 	resp, err := g.execute(ctx, "POST", "client_token", req)
 	if err != nil {
