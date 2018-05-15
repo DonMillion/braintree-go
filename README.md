@@ -43,7 +43,7 @@ In addition to creating transactions, you can also tokenize credit card informat
 
 ### Installation
 
-The usual. `go get github.com/lionelbarrow/braintree-go`
+The usual. `go get github.com/DonMillion/braintree-go`
 
 ### Supported Go Versions
 
