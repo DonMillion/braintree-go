@@ -13,7 +13,7 @@ With that said, this package contains more than enough to get you started accept
 Setting up your credentials is easy.
 
 ```go
-import "github.com/lionelbarrow/braintree-go"
+import "github.com/DonMillion/braintree-go"
 
 bt := braintree.New(
   braintree.Sandbox,
