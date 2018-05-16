@@ -143,6 +143,14 @@ func (g *Braintree) executeVersion(ctx context.Context, method, path string, xml
 		return nil, err
 	}
 
+	// 打印结果
+	g.Logger.Printf("---------------------------- executeVersion debug start ----------------------------")
+	g.Logger.Printf("url:%v", url)
+	g.Logger.Printf("xmlBody:%v", string(xmlBody))
+	g.Logger.Printf("req:%+v", req)
+	g.Logger.Printf("resp:%+v", resp)
+	g.Logger.Printf("---------------------------- executeVersion debug end ----------------------------")
+
 	if g.Logger != nil {
 		g.Logger.Printf("<\n%s", string(btr.Body))
 	}
