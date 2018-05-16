@@ -13,7 +13,7 @@ With that said, this package contains more than enough to get you started accept
 Setting up your credentials is easy.
 
 ```go
-import "github.com/lionelbarrow/braintree-go"
+import "github.com/DonMillion/braintree-go"
 
 bt := braintree.New(
   braintree.Sandbox,
@@ -43,7 +43,7 @@ In addition to creating transactions, you can also tokenize credit card informat
 
 ### Installation
 
-The usual. `go get github.com/lionelbarrow/braintree-go`
+The usual. `go get github.com/DonMillion/braintree-go`
 
 ### Supported Go Versions
 
